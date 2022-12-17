@@ -6,7 +6,7 @@
 
       <p>{{ isi.body }}</p>
 
-      <Share />
+      <Share :title="isi.title" />
     </div>
   </div>
 </template>

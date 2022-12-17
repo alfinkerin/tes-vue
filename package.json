@@ -14,8 +14,12 @@
     "@mdi/font": "^7.1.96",
     "sass": "^1.56.2",
     "v-pagination-3": "^0.1.7",
+    "vue-awesome-paginate": "^1.1.4",
     "vue-social-sharing": "^3.0.9",
     "vue-socials": "^2.0.0-0",
+    "vuejs-paginate": "^2.1.0",
+    "vuejs-paginate-next": "^1.0.2",
+    "vuejs-paginator": "^2.0.2",
     "vuetify": "^3.0.5"
   }
 }

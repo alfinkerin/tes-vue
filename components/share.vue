@@ -51,20 +51,25 @@
 
 <script>
 import { SFacebook, STwitter } from "vue-socials";
+
 export default {
   name: "SocialMediaShare",
   components: { SFacebook, STwitter },
+  props: {
+    title: String,
+  },
   data() {
     return {
       windowFeatures: {},
       facebookShareOptions: {
         url: "https://github.com/",
-        quote: "Quote",
+        text: this.title,
+        quote: this.title,
         hashtag: "#Github",
       },
       twitterShareOptions: {
         url: "https://github.com/",
-        text: "Hello world",
+        text: this.title,
         hashtags: ["hash", "tag"],
         via: "twitterdev",
       },

@@ -12,8 +12,8 @@
           </v-card>
         </NuxtLink>
       </div>
-      <v-pagination v-model="page" :length="6"></v-pagination>
     </div>
+    <Pagination />
   </div>
 </template>
 
@@ -23,7 +23,7 @@ definePageMeta({
 });
 
 const { data: article } = await useFetch(
-  "https://jsonplaceholder.typicode.com/posts"
+  "https://jsonplaceholder.typicode.com/posts?_limit=10"
 );
 </script>
 
